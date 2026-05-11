@@ -1,0 +1,287 @@
+@font-face {
+  font-family: poster-man;
+  src: url(./posterman.otf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(to bottom, rgb(5, 11, 15), rgb(9, 22, 33), rgb(5, 11, 15));
+  background-size: cover;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: white;
+}
+
+.main-container {
+  width: 90%;
+  margin: auto;
+  margin-top: 3%;
+}
+
+.top-line {
+  color: rgb(104, 142, 171);
+  height: 14px;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+
+.header-contents {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.header-data {
+  display: flex;
+  width: 60%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title {
+  font-size: 75px;
+  font-weight: 600;
+  letter-spacing: -5px;
+}
+
+.content-text {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  font-size: small;
+  font-weight: bold;
+  color: rgb(106, 117, 122);
+}
+
+.border {
+  border-left: 1px solid rgba(106, 117, 122, 0.492);
+  padding-left: 15px;
+  gap: 1px;
+}
+
+.filter-controls {
+  background: linear-gradient(to bottom, rgb(25, 38, 50), rgb(10, 17, 24));
+  border: 2px solid rgb(61, 66, 69);
+  border-radius: 13px;
+  display: flex;
+  color: rgb(166, 173, 176);
+  gap: 20px;
+  align-items: center;
+  padding: 12px 20px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.ri-equalizer-2-line {
+  font-size: 20px;
+}
+
+.collection {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin: 20px 0;
+}
+.card-line-1{
+  display: flex;
+  gap: 20px;
+}
+
+
+.featured {
+  border: 2px solid rgb(73, 79, 81);
+  border-radius: 15px;
+  position: relative;
+  width: 620px;
+  height: 450px;
+  background-image: url("./bg.png");
+  background-size: cover;
+  color: white;
+}
+
+.featured-img {
+  height: 100%;
+}
+
+.featured-text {
+  position: absolute;
+  top: 25%;
+  left: 60%;
+
+}
+
+.aurora {
+  font-size: 45px;
+  font-weight: 900;
+  letter-spacing: -4px;
+}
+
+.featured-value {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.btn {
+  border: 2px solid rgb(70, 102, 125);
+  padding: 11px 18px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+}
+
+.add-to-cart {
+  color: rgb(104, 142, 171);
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.price {
+  font-size: 18px;
+  letter-spacing: 2px;
+}
+
+.card {
+  border: 1px solid rgb(49, 52, 53);
+  height: 100%;
+  flex-grow: 1;
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+.card-top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(142, 168, 191);
+  height: 350px;
+}
+
+.card-image {
+  height: 300px;
+}
+
+.card-bottom {
+  background: rgb(40, 62, 82);
+  height: 90px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding-left: 12px;
+}
+
+.card-title {
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.card-desc {
+  color: rgb(160, 166, 169);
+  font-size: 11px;
+  font-weight: 700;
+}
+.color{
+  display: flex;
+  gap: 10px;
+}
+.option {
+  font-size: 11px;
+}
+.card-price{
+  font-size: 12px;
+  color: rgb(128, 137, 141);
+}
+
+.features{
+color: rgb(156, 163, 167);
+display: flex;
+justify-content: space-between;
+align-items: center;
+border: 1px solid rgb(49, 52, 53);
+border-radius: 15px;
+padding: 20px 120px 20px 40px;
+background-color: rgb(9, 23, 36);
+}
+.feature{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+h3{
+  font-size: 14px;
+}
+.feature-icon{
+  font-size: 40px;
+}
+.feature-desc{
+  color: rgb(157, 163, 167);
+  font-size: 13px;
+  
+}
+.standing-line{
+  border: 1px solid rgb(49, 52, 53);
+  height: 40px;
+}
+.footer{
+color: rgb(156, 163, 167);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid rgb(49, 52, 53);
+  border-radius: 15px;
+  padding: 10px 20px;
+  margin-top: 10px;
+  background-color: rgb(9, 23, 36);
+}
+.company{
+  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.links{
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 600;
+}
+.socials{
+  color: rgb(131, 137, 141);
+
+  font-size: 13px;
+  width: 180px;
+  font-weight: 700;
+  display: flex;
+  justify-content: space-between;
+}
+.social-icons{
+  color: rgb(180, 187, 190);
+  font-size: 16px;
+}
+.rights{
+  margin-left: 12px;
+  font-size: 13px;
+}
+.black{
+  color: black;
+}
+.blue{
+  color: rgb(188, 209, 227);
+}
+.grey{
+  color: grey;
+}
